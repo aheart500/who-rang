@@ -1,7 +1,6 @@
 # OSX
 #
 .DS_Store
-
 # Xcode
 #
 build/
@@ -23,8 +22,7 @@ DerivedData
 
 # Android/IntelliJ
 #
-android/*
-ios/*
+android/
 build/
 .ideaapp/release/
 .gradle

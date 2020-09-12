@@ -20,6 +20,7 @@ interface CustomStyles {
     | '700'
     | '800'
     | '900';
+  fontFamily?: 'Cairo-Regular' | 'Cairo-Bold';
 }
 
 interface TextProps extends NativeProps, CustomStyles {
@@ -33,6 +34,7 @@ const Text = ({
   fontWeight,
   color,
   fontSize,
+  fontFamily,
   ...props
 }: TextProps) => {
   let customStyles: CustomStyles = {};
@@ -44,6 +46,9 @@ const Text = ({
   }
   if (fontWeight) {
     customStyles.fontWeight = fontWeight;
+  }
+  if (fontFamily) {
+    customStyles.fontFamily = fontFamily;
   }
   return (
     <NativeText

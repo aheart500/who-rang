@@ -14,7 +14,11 @@ const Header = ({openDrawer}) => {
         style={styles.headerIcon}
         onPress={openDrawer}
       />
-      <Text color="white" fontSize={30} fontWeight="bold">
+      <Text
+        color="white"
+        fontSize={30}
+        fontFamily="Cairo-Regular"
+        fontWeight="bold">
         من المتصل
       </Text>
     </View>
@@ -29,7 +33,7 @@ const styles = StyleSheet.create({
   },
   headerIcon: {
     position: 'absolute',
-    [isArabic ? 'left' : 'right']: 10,
+    [isArabic ? 'right' : 'left']: 10,
   },
 });
 
